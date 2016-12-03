@@ -1,3 +1,152 @@
 <resources>
-    <string name="app_name">HuiHeart</string>
+<string name="app_name">HuiHeart</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
+
+<string name="advisory_tab">咨询</string>
+<string name="home_tab">蕙心</string>
+<string name="lord_tab">群组</string>
+<string name="thoughts_tab">心理圈</string>
+
+<string name="customer_service">客服</string>
+<string name="my_tall_icon">我要倾诉</string>
+<string name="my_contact_call">我要咨询</string>
+<string name="my_free_icon">免费体验</string>
+<string name="my_exam_icon">心里测试</string>
+<string name="recomment_master">推荐咨询师</string>
+<string name="open">open</string>
+<string name="close">close</string>
+<string name="setting_gesture_state_off">关闭</string>
+
+<string name="replay_comment">回复</string>
+
+<string name="hot_fragment">热门</string>
+<string name="time_fragment">最新</string>
+
+
+<!--{"全部","亲子教育","青春成长","情绪困扰","婚恋情感"
+,"社交职场","心里障碍","我的想法","其他"};-->
+
+<string name="all_thought">全部</string>
+<string name="parenting_thought">亲子教育</string>
+<string name="youth_growth_thought">青春成长</string>
+<string name="emotional_disturbance_thought">情绪困扰</string>
+<string name="romantic_attachment_thought">婚恋情感</string>
+<string name="friends_pay_thought">社交职场</string>
+<string name="psychological_disorders_thought">心里障碍</string>
+<string name="my_thought">我的想法</string>
+<string name="other_thought">其他</string>
+<string name="setting">设置</string>
+
+<string name="direct_sedding">直播回放(</string>
+
+<string name="user_comment">用户评论(</string>
+
+<string name="gif_count">TA的礼物(</string>
+
+<string name="tag1">婚恋情感</string>
+<string name="tag2">情绪困扰</string>
+<string name="tag3">亲子教育</string>
+
+<string name="agree_user_argument">请同意用户协议</string>
+
+<string name="is_not_phone">输入的手机号码不正确</string>
+
+<string name="login_success">登录成功</string>
+
+<string name="login_out">退出登录</string>
+<string name="login_in">点击登录</string>
+<string name="my_send">我送出的</string>
+<string name="my_accepted">我收到的</string>
+<string name="redeem_coin">兑换心币</string>
+
+<string name="pop_photo">拍照</string>
+<string name="pop_choose">从相册中选择</string>
+<string name="pop_close">取消</string>
+
+<string name="occ_title">职业选择</string>
+
+
+<string name="beijing">北京</string>
+<string name="shanghai">上海</string>
+<string name="guangzhou">广州</string>
+<string name="shengzhen">深圳</string>
+<string name="tianjin">天津</string>
+<string name="updating">更新中。。。</string>
+
+<string name="news_detail">咨询详情</string>
+<string name="live_tab">直播</string>
+
+<string name="add_lord">添加分组</string>
+<string name="search_lord">搜索分组</string>
+<string name="has_not_more_data">没有更多数据了</string>
+
+<string name="register_failed">注册失败</string>
+
+<string name="phone_num_is_not_empty">手机号不能为空</string>
+<string name="phone_num_length_is_error">手机号码长度不对</string>
+<string name="check_your_phone_format">请检查您的手机号格式是否正确</string>
+<string name="register_success">注册成功</string>
+
+
+<string name="input_correct_key">您输入的关键字有误，请重新输入！</string>
+<string name="please_insert_sd_card">请确认已经插入SD卡</string>
+
+<string name="recomment">推荐</string>
+<string name="lol">LOL</string>
+<string name="dota2">DOTA2</string>
+<string name="lushi">炉石</string>
+
+<string name="living">直播</string>
+<string name="attention">新闻</string>
+
+<string name="video_image">视频截图</string>
+<string name="num_people">位观众</string>
+
+<string name="feedback_contact_hint">您的邮箱 (必填)</string>
+<string name="feedback_content_hint">写下您的需求和建议</string>
+<string name="feedback_phone_hint">手机号码  (必填)</string>
+<string name="request_not_empty">需求和建议不能为空</string>
+<string name="submit_success">提交成功，谢谢您的建议和需求，我们会尽快改正！！！</string>
+<string name="change_success">修改密码成功</string>
+
+<string name="change_password">修改密码</string>
+<string name="new_function">新功能在计划中,请耐心等候。。。</string>
+<string name="clear_success">清理成功</string>
+<string name="clear_tip">提示</string>
+<string name="ok">确定</string>
+<string name="notification">通知</string>
+    <string name="notification_content">热爱编程的小白\r\n\r\n
+QQ:1069584784(爱好交友)\r\n\r\n
+CSDN地址：http://blog.csdn.net/wuyinlei\r\n\r\n
+GitHub地址：https://github.com/wuyinlei\r\n\r\n
+欢迎访问和Fork</string>
+<string name="group_winer">群主</string>
+<string name="group_code">群组号</string>
+<string name="group_address">群地址</string>
+<string name="group_cag">群类别</string>
+<string name="group_member">群成员</string>
+<string name="group_check">审         核</string>
+<string name="group_introduce">群介绍</string>
+<string name="back">返回</string>
+
+<string name="description_solgn">暂无描述</string>
+
+<string name="loading_finish">加载完成</string>
+<string name="register_loading">正在注册中...</string>
+<string name="loading">加载中...</string>
+
+<string name="waiting">请稍后...</string>
+
+<!--新闻type-->
+<string name="higo">头条</string>
+<string name="player">玩家</string>
+<string name="indoorsfun">科技宅</string>
+<string name="look">业界</string>
+
+<string name="tip">提示</string>
+<string name="exit">确认退出吗？</string>
+<string name="cancel">取消</string>
+
 </resources>

@@ -29,7 +29,7 @@
         android:gravity="bottom|center_horizontal"
         android:orientation="horizontal">
         <RadioButton
-            android:id="@+id/rgTabHome"
+            android:id="@+id/rbTabHome"
             style="@style/TabButton"
             android:drawableTop="@drawable/ic_tab_home_selector"
             android:text="@string/home_tab"

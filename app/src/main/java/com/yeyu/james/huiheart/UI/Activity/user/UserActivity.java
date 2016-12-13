@@ -1,4 +1,4 @@
-package com.yeyu.james.huiheart.UI.Activity.left;
+package com.yeyu.james.huiheart.UI.Activity.user;
 
 /**
  * Created by James on 2016/12/9.

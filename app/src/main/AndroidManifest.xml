@@ -2,6 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yeyu.james.huiheart">
 
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+
+    <!-- 短信验证SDK -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="ruolan.com.myhearts.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <!-- Share SDK -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,6 +51,264 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Activity.Main.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.guide.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.MessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.FollowActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.ContactActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.MoneyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.GiftActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.WorryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.left.ReserveActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI.Activity.news.OrationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.fragment.lord.LordDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.left.setting.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UI.Activity.user.UserDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.register.RegisterSecondActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="mob_sms_appKey"
+            android:value="184c536d59f39"/>
+        <meta-data
+            android:name="mob_sms_appSecrect"
+            android:value="a1efccaec8cb511df0c9928f4025ea42"/>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent1105704769"/>
+                <!-- 100380359 100381104 222222 1105704769 -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".UI.Activity.user.UserActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.user.UpdateUserActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.user.CityActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.user.IndividualityActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".UI.Activity.news.NewsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".UI.Activity.Main.BannerDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- Bmob自动更新 -->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <!-- 极光推送SDK集成 -->
+
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <!--<activity-->
+            <!--android:name="cn.jpush.android.ui.PopWinActivity"-->
+            <!--android:exported="false"-->
+            <!--android:theme="@style/MyDialogStyle">-->
+        <!--</activity>-->
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="ruolan.com.myhearts"/>
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="ruolan.com.myhearts"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/> <!-- Required  显示通知栏 -->
+                <category android:name="ruolan.com.myhearts"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="5f9cd7e4fd9bc1ecf50a402f"/> <!-- </>值来自开发者平台取得的AppKey -->
+
+        <activity android:name=".ui.push.PushActivity">
+        </activity>
+        <activity android:name=".wxapi.WXEntryActivity"/>
+
+        <!-- Share  SDK -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.play.VideoViewActivity"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity
+            android:name=".ui.play.VideoViewLiveActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".UI.Activity.left.setting.FeedActivity">
+        </activity>
+        <activity android:name=".UI.Activity.password.ChangePasswordActivity">
+    </activity>
+        <activity android:name=".ui.login.CorrectPasswordFirst">
+        </activity>
+        <activity android:name=".ui.fragment.lord.GroupDetailActivity">
+        </activity>
+        <activity android:name=".ui.fragment.lord.GroupMemberActivity">
+        </activity>
+        <activity android:name=".ui.fragment.thoughts.CircleFriendsActivity">
+        </activity>
+        <activity android:name=".ui.fragment.advisory.UserAbstractActivity">
+        </activity>
+        <activity android:name=".ui.fragment.live.LivingBannerActivity">
+        </activity>
+        <activity android:name=".ui.fragment.live.NewsDetailActivity">
         </activity>
     </application>
 

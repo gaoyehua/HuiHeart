@@ -20,6 +20,7 @@ import com.yeyu.james.huiheart.UI.Activity.Main.MainActivity;
 import com.yeyu.james.huiheart.UI.Activity.left.ContactActivity;
 import com.yeyu.james.huiheart.UI.Activity.left.FollowActivity;
 import com.yeyu.james.huiheart.UI.Activity.left.GiftActivity;
+import com.yeyu.james.huiheart.UI.Activity.left.MoneyActivity;
 import com.yeyu.james.huiheart.UI.Activity.login.LoginActivity;
 import com.yeyu.james.huiheart.UI.Activity.left.MessageActivity;
 import com.yeyu.james.huiheart.UI.Activity.left.ReserveActivity;

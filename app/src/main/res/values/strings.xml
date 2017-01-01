@@ -116,11 +116,11 @@
 <string name="clear_success">清理成功</string>
 <string name="clear_tip">提示</string>
 <string name="ok">确定</string>
-<string name="notification">通知</string>
+<string name="notification">温馨提示</string>
     <string name="notification_content">热爱编程的小白\r\n\r\n
-QQ:1069584784(爱好交友)\r\n\r\n
-CSDN地址：http://blog.csdn.net/wuyinlei\r\n\r\n
-GitHub地址：https://github.com/wuyinlei\r\n\r\n
+QQ:1256546599(爱好交友)\r\n\r\n
+CSDN地址：http://blog.csdn.net/gaoyehua\r\n\r\n
+GitHub地址：https://github.com/gaoyehua\r\n\r\n
 欢迎访问和Fork</string>
 <string name="group_winer">群主</string>
 <string name="group_code">群组号</string>

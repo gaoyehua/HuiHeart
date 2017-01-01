@@ -8,5 +8,5 @@
              android:bottomRightRadius="5dp"
              android:bottomLeftRadius="5dp"/>
     <stroke android:width="0.5dip"
-            android:color="@color/text_color_chengse" />
+            android:color="@color/text_color_orange" />
 </shape>

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.yeyu.james.huiheart.Contant.Contants;
 import com.yeyu.james.huiheart.R;
-import com.yeyu.james.huiheart.UI.Activity.BaseActivity;
+import com.yeyu.james.huiheart.UI.base.BaseActivity;
 import com.yeyu.james.huiheart.entity.FeedBean;
 import com.yeyu.james.huiheart.utils.RegularUtils;
 

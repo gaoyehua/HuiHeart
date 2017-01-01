@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.yeyu.james.huiheart.Contant.Contants;
 import com.yeyu.james.huiheart.R;
-import com.yeyu.james.huiheart.UI.Activity.BaseActivity;
+import com.yeyu.james.huiheart.UI.base.BaseActivity;
 import com.yeyu.james.huiheart.UI.Activity.login.LoginActivity;
 import com.yeyu.james.huiheart.UI.Activity.password.ChangePasswordActivity;
 import com.yeyu.james.huiheart.entity.MyUser;

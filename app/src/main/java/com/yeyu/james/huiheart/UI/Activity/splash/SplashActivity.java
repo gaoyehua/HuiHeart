@@ -17,7 +17,7 @@ import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.BitmapCallback;
 import com.yeyu.james.huiheart.Contant.Contants;
 import com.yeyu.james.huiheart.R;
-import com.yeyu.james.huiheart.UI.Activity.BaseActivity;
+import com.yeyu.james.huiheart.UI.base.BaseActivity;
 import com.yeyu.james.huiheart.UI.Activity.Main.MainActivity;
 import com.yeyu.james.huiheart.UI.Activity.guide.GuideActivity;
 import com.yeyu.james.huiheart.entity.MyUser;
@@ -96,18 +96,18 @@ public class SplashActivity extends BaseActivity {
                 String userPassword =PreferencesUtils.getString(SplashActivity.this,
                         Contants.USER_PASSWORD);
 
-                BmobUser.loginByAccount(userName, userPassword, new LogInListener<MyUser>() {
-
-                    @Override
-                    public void done(MyUser myUser, BmobException e) {
-                        if(myUser !=null){
-                            Log.i("smile","用户登录成功！");
-                            EventBus.getDefault().post(new LoginEvent(myUser));
-                            PreferencesUtils.putBoolean(SplashActivity.this,
-                                    Contants.IS_LOGIN,true);
-                        }
-                    }
-                });
+//                BmobUser.loginByAccount(userName, userPassword, new LogInListener<MyUser>() {
+//
+//                    @Override
+//                    public void done(MyUser myUser, BmobException e) {
+//                        if(myUser !=null){
+//                            Log.i("smile","用户登录成功！");
+//                            EventBus.getDefault().post(new LoginEvent(myUser));
+//                            PreferencesUtils.putBoolean(SplashActivity.this,
+//                                    Contants.IS_LOGIN,true);
+//                        }
+//                    }
+//                });
 
                 Intent intent =new Intent();
                 if(isFirst){

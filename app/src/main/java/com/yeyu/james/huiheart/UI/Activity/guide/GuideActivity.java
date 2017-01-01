@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.yeyu.james.huiheart.R;
-import com.yeyu.james.huiheart.UI.Activity.BaseActivity;
+import com.yeyu.james.huiheart.UI.base.BaseActivity;
 import com.yeyu.james.huiheart.UI.Activity.Main.MainActivity;
 
 import java.util.ArrayList;

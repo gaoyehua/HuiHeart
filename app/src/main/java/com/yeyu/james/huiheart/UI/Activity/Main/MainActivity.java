@@ -21,7 +21,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.nineoldandroids.view.ViewHelper;
 import com.yeyu.james.huiheart.Contant.Contants;
 import com.yeyu.james.huiheart.R;
-import com.yeyu.james.huiheart.UI.Activity.BaseActivity;
+import com.yeyu.james.huiheart.UI.base.BaseActivity;
 import com.yeyu.james.huiheart.UI.Fragment.Advisory.AdvisoryFragment;
 import com.yeyu.james.huiheart.UI.Fragment.Group.GroupFragment;
 import com.yeyu.james.huiheart.UI.Fragment.Home.HomeFragment;
